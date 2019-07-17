@@ -4,6 +4,9 @@
 # @Email    : 1104197970@qq.com
 # @File     : run.py
 #执行用例 生成测试报告
+import sys
+sys.path.append('./')
+print(sys.path)
 import unittest
 import HTMLTestRunnerNew
 from API_6.common import project_path
