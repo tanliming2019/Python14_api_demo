@@ -2114,3 +2114,248 @@
 [2019-07-16 22:55:54,550]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
 [2019-07-16 22:55:54,708]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
 [2019-07-16 22:55:54,708]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 01:22:13,285]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 01:22:13,286]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131059','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 01:22:15,820]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-18 01:22:15,821]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-18 01:22:15,821]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 01:22:15,822]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 01:22:15,982]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-18 01:22:15,983]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-18 01:22:15,983]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 01:22:15,984]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 01:22:16,157]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 01:22:16,157]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 01:22:16,158]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 01:22:16,158]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 01:22:17,754]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '17300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 01:22:17,754]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '17300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 01:22:17,755]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 01:22:17,756]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 01:22:17,906]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 01:22:17,907]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 01:36:15,399]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 01:36:15,405]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131060','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 01:36:17,786]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-18 01:36:17,786]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-18 01:36:17,787]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 01:36:17,788]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 01:36:17,946]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-18 01:36:17,947]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-18 01:36:33,498]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 01:36:33,498]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131061','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 01:36:35,853]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-18 01:36:35,853]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-18 01:36:35,854]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 01:36:35,854]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 01:36:36,120]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-18 01:36:36,120]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-18 01:36:36,121]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 01:36:36,122]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 01:36:36,429]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 01:36:36,430]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 01:36:36,430]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 01:36:36,431]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 01:36:37,880]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '18300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 01:36:37,880]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '18300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 01:36:37,881]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 01:36:37,881]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 01:36:38,043]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 01:36:38,043]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 02:33:16,824]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 02:33:16,824]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131062','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 02:33:19,711]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-18 02:33:19,711]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-18 02:33:19,712]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 02:33:19,712]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 02:33:19,865]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-18 02:33:19,866]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-18 02:33:19,866]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 02:33:19,867]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 02:33:20,024]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 02:33:20,024]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 02:33:20,025]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 02:33:20,025]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 02:33:21,339]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '19300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 02:33:21,339]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '19300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 02:33:21,340]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 02:33:21,340]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 02:33:21,488]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 02:33:21,489]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 14:22:52,464]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:22:52,469]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131064','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:22:55,206]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:22:55,207]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:22:55,315]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:22:55,315]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:22:55,414]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:22:55,414]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:22:57,713]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是：Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:22:57,860]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:22:57,860]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 14:23:16,810]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:23:16,810]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131065','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:23:19,311]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:23:19,311]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:23:19,453]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:23:19,454]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:23:19,557]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:23:19,558]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:23:21,392]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是：Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:23:21,523]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:23:21,524]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 14:23:38,500]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:23:38,501]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131066','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:23:41,181]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:23:41,182]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:23:41,291]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:23:41,292]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:23:41,404]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:23:41,404]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:23:43,422]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是：Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:23:43,594]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:23:43,595]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 14:24:16,068]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:24:16,069]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131067','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:24:19,190]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:24:19,191]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:24:19,305]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:24:19,306]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:24:19,402]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:24:19,402]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:24:24,225]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是：Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:24:24,383]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:24:24,384]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 14:25:25,691]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:25:25,691]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131068','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:25:28,211]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:25:28,212]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:25:28,321]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:25:28,322]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:25:28,432]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:25:28,433]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:25:30,451]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是：Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:25:30,618]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:25:30,618]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 14:26:16,756]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:26:16,757]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131069','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:26:19,214]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:26:19,215]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:26:19,318]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:26:19,318]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:26:19,412]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:26:19,413]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:26:21,418]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是：Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:26:21,564]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:26:21,564]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 14:27:08,710]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 14:27:08,718]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131070','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 14:27:11,213]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 14:27:11,214]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 14:29:09,926]-[INFO]-[日志信息]:-----正在测试login模块第1条用例：正常登录
+[2019-07-18 14:29:09,932]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131020','pwd':'a12345678'}\n", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+[2019-07-18 14:29:12,268]-[INFO]-[日志信息]:-----正在测试add_loan模块第2条用例：加标
+[2019-07-18 14:29:12,268]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Method': 'post', 'Params': "{'memberId':'79330','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'Sql': "{'sql':'select max(Id) from loan where MemberId = 79330'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'加标成功'}"}
+[2019-07-18 14:29:13,509]-[INFO]-[日志信息]:-----正在测试audit模块第3条用例：审核到4状态
+[2019-07-18 14:29:13,510]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Method': 'post', 'Params': "{'id':'loanid','status':4}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+[2019-07-18 14:31:22,501]-[INFO]-[日志信息]:-----正在测试login模块第1条用例：正常登录
+[2019-07-18 14:31:22,507]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131020','pwd':'a12345678'}\n", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+[2019-07-18 14:31:25,200]-[INFO]-[日志信息]:-----正在测试add_loan模块第2条用例：加标
+[2019-07-18 14:31:25,200]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'add_loan', 'Title': '加标', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Method': 'post', 'Params': "{'memberId':'79330','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'Sql': "{'sql':'select max(Id) from loan where MemberId = 79330'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'加标成功'}"}
+[2019-07-18 14:31:26,115]-[INFO]-[日志信息]:-----正在测试audit模块第3条用例：审核到4状态
+[2019-07-18 14:31:26,116]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'audit', 'Title': '审核到4状态', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Method': 'post', 'Params': "{'id':'loanid','status':4}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+[2019-07-18 14:35:24,233]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 14:35:24,238]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 14:35:30,197]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 14:35:30,197]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 14:35:31,678]-[ERROR]-[日志信息]:http请求测试用例出错了，错误是： :: Decimal('20300.00') != Decimal('19300.00')
+[2019-07-18 14:35:31,717]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 14:35:31,718]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 22:16:22,371]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 22:16:22,371]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131071','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 22:16:25,114]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-18 22:16:25,115]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-18 22:16:25,116]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 22:16:25,116]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 22:16:25,252]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-18 22:16:25,253]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-18 22:16:25,253]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-18 22:16:25,253]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-18 22:16:25,435]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 22:16:25,436]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-18 22:16:25,436]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-18 22:16:25,437]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-18 22:16:28,937]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '20300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 22:16:28,937]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '20300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-18 22:16:28,938]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-18 22:16:28,938]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-18 22:16:29,081]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 22:16:29,081]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-18 22:42:15,034]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-18 22:42:15,037]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131072','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-18 22:42:18,103]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-18 22:42:18,103]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-18 22:42:18,108]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-18 22:42:18,108]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-18 22:42:18,280]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-18 22:42:18,281]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-19 11:29:07,870]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-19 11:29:07,871]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131073','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-19 11:29:10,375]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-19 11:29:10,375]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-19 11:29:10,376]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-19 11:29:10,377]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-19 11:29:10,531]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-19 11:29:10,532]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-19 11:29:10,533]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-19 11:29:10,533]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-19 11:29:10,692]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-19 11:29:10,693]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-19 11:29:10,694]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-19 11:29:10,695]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-19 11:29:12,675]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '21300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-19 11:29:12,676]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '21300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-19 11:29:12,676]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-19 11:29:12,677]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-19 11:29:12,830]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-19 11:29:12,831]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-19 11:30:00,823]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-19 11:30:00,824]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131074','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-19 11:30:03,355]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-19 11:30:03,355]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-19 11:30:03,356]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-19 11:30:03,357]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-19 11:30:03,506]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-19 11:30:03,507]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-19 11:30:03,508]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-19 11:30:03,508]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-19 11:30:03,662]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-19 11:30:03,662]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-19 11:30:03,663]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-19 11:30:03,664]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-19 11:30:06,213]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '22300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-19 11:30:06,214]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '22300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-19 11:30:06,214]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-19 11:30:06,215]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-19 11:30:09,370]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-19 11:30:09,371]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-19 11:40:29,688]-[INFO]-[日志信息]:-----正在测试register模块第1条用例：正常注册
+[2019-07-19 11:40:29,689]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'register', 'Title': '正常注册', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'get', 'Params': "{'mobilephone':'15013131075','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"注册成功"}'}
+[2019-07-19 11:40:32,354]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '注册成功'}
+[2019-07-19 11:40:32,354]-[INFO]-[日志信息]:期望结果：{"status":1,"code":"10001","data":None,"msg":"注册成功"}
+[2019-07-19 11:40:32,355]-[INFO]-[日志信息]:-----正在测试register模块第2条用例：不输入手机号
+[2019-07-19 11:40:32,356]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'register', 'Title': '不输入手机号', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Method': 'post', 'Params': "{'mobilephone':'','pwd':'a12345678'}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}'}
+[2019-07-19 11:40:32,512]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20103', 'data': None, 'msg': '手机号不能为空'}
+[2019-07-19 11:40:32,513]-[INFO]-[日志信息]:期望结果：{"status":0,"code":"20103","data":None,"msg":"手机号不能为空"}
+[2019-07-19 11:40:32,515]-[INFO]-[日志信息]:-----正在测试Login模块第1条用例：正常登录
+[2019-07-19 11:40:32,515]-[INFO]-[日志信息]:测试数据是：{'CaseId': 1, 'Module': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': "{'mobilephone':'15013131044','pwd':'123456'}", 'Sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-07-19 11:40:32,684]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-19 11:40:32,684]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-07-19 11:40:32,685]-[INFO]-[日志信息]:-----正在测试recharge模块第2条用例：正常充值
+[2019-07-19 11:40:32,686]-[INFO]-[日志信息]:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':'1000'}", 'Sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "15013131044"\'}', 'ExpectedResult': '{"status":1,"code":"10001","data":{"id":93271,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"15013131044","leaveamount":"expectamount","type":"1","regtime":"2019-07-08 02:48:53.0"},"msg":"充值成功"}'}
+[2019-07-19 11:40:34,522]-[INFO]-[日志信息]:实际结果:{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '23300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-19 11:40:34,523]-[INFO]-[日志信息]:期望结果：{'status': 1, 'code': '10001', 'data': {'id': 93271, 'regname': '小蜜蜂', 'pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'mobilephone': '15013131044', 'leaveamount': '23300.00', 'type': '1', 'regtime': '2019-07-08 02:48:53.0'}, 'msg': '充值成功'}
+[2019-07-19 11:40:34,525]-[INFO]-[日志信息]:-----正在测试recharge模块第3条用例：不输入充值金额
+[2019-07-19 11:40:34,526]-[INFO]-[日志信息]:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入充值金额', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': "{'mobilephone':'15013131044','amount':''}", 'Sql': None, 'ExpectedResult': '{"status":0,"code":"20115","data":None,"msg":"请输入金额"}'}
+[2019-07-19 11:40:34,679]-[INFO]-[日志信息]:实际结果:{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}
+[2019-07-19 11:40:34,679]-[INFO]-[日志信息]:期望结果：{'status': 0, 'code': '20115', 'data': None, 'msg': '请输入金额'}

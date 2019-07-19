@@ -5,7 +5,7 @@
 # @File     : my_logging.py
 
 import logging
-from API_5.common import project_path
+from API_6.common import project_path
 class ReadLogging:
 
     def my_log(self,level,msg):

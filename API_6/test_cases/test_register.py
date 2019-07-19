@@ -3,6 +3,7 @@
 # @Author   : lemon_Liming
 # @Email    : 1104197970@qq.com
 # @File     : test_register.py
+
 import unittest
 from ddt import ddt,data
 from API_6.common.my_log import ReadLogging

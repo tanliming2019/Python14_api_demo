@@ -6,9 +6,8 @@
 #执行用例 生成测试报告
 import sys
 sys.path.append('./')
-print(sys.path)
 import unittest
-import HTMLTestRunnerNew
+from API_6.ext import HTMLTestRunnerNew
 from API_6.common import project_path
 from API_6.test_cases import test_register#具体到模块
 from API_6.test_cases import test_recharge

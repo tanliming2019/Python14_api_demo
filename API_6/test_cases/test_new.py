@@ -5,13 +5,13 @@
 # @File    : test_cases.py
 import unittest
 from ddt import ddt,data
-from API_4.common.my_log import ReadLogging
-from API_4.common.http_request import HttpRequest
-from API_4.common.do_excel_new import DoExcel
-from API_4.common import project_path
+from API_6.common.my_log import ReadLogging
+from API_6.common.http_request import HttpRequest
+from API_6.common.do_excle_new import DoExcle
+from API_6.common import project_path
 
 #测试充值
-test_data=DoExcel(project_path.case_path,'recharge').read_data()#获取测试数据
+test_data=DoExcle(project_path.case_path,'recharge').read_data()#获取测试数据
 my_log=ReadLogging()
 COOKIES=None#设置cookies的初始值为None
 
@@ -33,7 +33,7 @@ class TestCases(unittest.TestCase):
         method=case['Method']
         url=case['Url']
         param=eval(case['Params'])
-        self.t=DoExcel(project_path.case_path,case['sheet_name'])#写入测试结果的对象
+        self.t=DoExcle(project_path.case_path,case['sheet_name'])#写入测试结果的对象
 
         #发起测试
         my_log.info('-------正在测试{}模块里面第{}条测试用例：{}'.format(case['Module'],case['CaseId'],case['Title']))

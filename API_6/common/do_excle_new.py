@@ -5,8 +5,8 @@
 # @File     : do_excle.py
 
 from openpyxl import load_workbook
-from API_4.common import project_path
-from API_4.common.read_config import ReadConfig
+from API_6.common import project_path
+from API_6.common.read_config import ReadConfig
 #操作的思路  一次性把数据从Excel里面读取出来   到底取哪些用例 根据配置文件来走
 #配置文件的数据  这个时候 已经是一个字典了 case_id={'recharge':'all','register':[1,2]}
 #设计的一个技巧：字典的key==目标表单名
