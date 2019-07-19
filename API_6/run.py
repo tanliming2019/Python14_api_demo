@@ -5,7 +5,7 @@
 # @File     : run.py
 #执行用例 生成测试报告
 import sys
-sys.path.append('D:\测试工具\Jenkins\workspace\python14_api_demo\API_6')
+sys.path.append('D:\测试工具\Jenkins\workspace\python14_api_demo')
 print(sys.path)
 import unittest
 from API_6.ext import HTMLTestRunnerNew
