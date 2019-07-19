@@ -5,6 +5,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/python_14.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_14.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/common/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/common/http_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/common/project_path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_1/test_cases/test_api.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/common/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/common/http_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/common/my_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/common/project_path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/common/read_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/conf/case.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/test_cases/test_api.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/test_cases/test_cases.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/test_result/test_log/test_log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_2/test_result/test_report/Test_report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_2_作业练习/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_6/ext/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_2_作业练习/common/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_2_作业练习/common/do_excle.py" beforeDir="false" />
@@ -18,6 +38,19 @@
       <change beforePath="$PROJECT_DIR$/API_2_作业练习/test.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_2_作业练习/test_cases/case_id.conf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_2_作业练习/test_cases/test_api.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/common/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/common/http_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/common/my_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/common/project_path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/common/read_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/conf/case.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/test_cases/test_api.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/test_cases/test_cases.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/test_result/test_log/test_log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_3/test_result/test_report/Test_report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_3_作业练习/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_3_作业练习/common/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_3_作业练习/common/do_excle.py" beforeDir="false" />
@@ -33,6 +66,33 @@
       <change beforePath="$PROJECT_DIR$/API_3_作业练习/test_cases/test_cases.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_3_作业练习/test_result/test_log/test_log.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_3_作业练习/test_result/test_report/Test_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/.idea/API_4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/do_excle_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/get_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/http_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/my_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/project_path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/common/read_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/conf/case.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/conf/case_new.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_addloan.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_api.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_cases_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_invest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_recharge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_cases/test_register.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_result/test_log/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_result/test_log/test_log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_4/test_result/test_report/Test_report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API_5/test_cases/test_api.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API_5/test_cases/test_api.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_5/test_result/test_log/test_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/API_5/test_result/test_log/test_log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API_6/common/do_excle_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_6/common/do_excle_new.py" afterDir="false" />
@@ -357,6 +417,153 @@
       <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/__version__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/stdin/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0102/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0102/class_01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0102/class_02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0104/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0104/class_作业.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0104/class_元组.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0104/class_列表.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0104/class_字典.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_1/class_0104/class_字符串.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/class_条件语句.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/class_练习.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/class_运算符.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0107/homewor/homework_7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/class_for循环.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/class_while循环.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0109/homework/homework_9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0111/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0111/class_位置函数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0111/class_函数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_2/class_0111/class_函数_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/class_内置函数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/class_函数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/homework_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/homework_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/homework_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/homework_进阶1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0114/homework/homework_进阶2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0116/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0116/class_内置函数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_3/class_0116/class_函数知识补充.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0121/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0121/class_路径处理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0121/py14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0123/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0123/class_python文件处理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0123/test14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_4/class_0123/test15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/class_异常处理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/class_模块导入.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/sub.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0213/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/Boy_Friend_New.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/Boy_friend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/homework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/homework/homework_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_5/class_0215/we_Chat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/class_math_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/class_math_method_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/homework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/homework/homework_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/http_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/we_Chat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0218/we_chat1.0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0220/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0220/class_debug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0220/http.request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0220/human_vs_pc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/homework_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/python14.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/python17.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/python18.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/python20.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/homework/python21.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/learm_pandas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/learn_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/python14.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/python15.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/python16.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/python17.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_6/class_0222/python22.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0225/data_type.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0225/homework/data_type.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0225/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0225/lemo.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0225/python14.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0225/配置文件学习.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/do_excle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/homework_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/my_loging.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/python22.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/homework/test_1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/log.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/logging模块.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/my_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/python22.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/read_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0227/test1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0301/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0301/class_unittest_learn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0301/learn_suit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_7/class_0301/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/class_unittest_learn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/learn_001.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/learn_ddt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/learn_suit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0304/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0306/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0306/class_接口知识补充.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0308/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0308/learm_requests_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0308/learn_requests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_8/class_0308/接口需求分析.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -365,7 +572,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -449,10 +656,6 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="python_14" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_14" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="python_14" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -740,7 +943,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17173052" />
       <window_info id="Structure" order="1" weight="0.24966975" />
