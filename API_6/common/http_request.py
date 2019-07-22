@@ -3,7 +3,6 @@
 # @Author   : lemon_Liming
 # @Email    : 1104197970@qq.com
 # @File     : http_request.py
-
 import requests
 class HttpRequest:
     '''该类完成get以及post请求，并返回结果'''
